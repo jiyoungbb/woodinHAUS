@@ -30,4 +30,8 @@
     .gnb{
         display: none;
     }
+
+    #content1 p{
+        font-size: var(--font-large);
+    }
 }
