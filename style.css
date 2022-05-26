@@ -185,9 +185,11 @@ header{
 }
 
 @keyframes slide_down{
-    0%{height: 0;}
-    50%{height: 100%;}
-    100%{height: 100%; top: 100%; }
+    0%{height: 0; top: 0;}
+    30%{height: 100%; top: 0;}
+    60%{height: 100%; top: 100%; }
+    90%{height: 0; top: 100%; }
+    100%{height: 0; top: 0; }
 }
 
 /* ########### CONTENT 02 ########### */
@@ -227,5 +229,52 @@ header{
 .best_slider{
     width: 50%; height: 100%;
     border-radius: 10px;
+    overflow: hidden;
     background-color: red;
+    position: relative;
+}
+.best_slide_container{
+    width: 1400px; height: 100%;
+    display: flex;
+    background-color: #fff;
+}
+.best_item{
+    width: 50%; height: 100%;
+}
+.best_slider img{
+    width: 100%; height: 100%;
+}
+.caption{
+    width: 100%; height: 110px;
+    background-color: #fff;
+    position: absolute;
+    left: 0; bottom: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 30px;
+    border: 1px solid #000;
+}
+.caption ul{
+    display: flex;
+    padding: 0;
+}
+.caption ul li{
+    margin-right: 10px;
+    font-size: 26px;
+    font-weight: 100;
+}
+.caption ul li:first-child::after{
+    content: '|';
+    font-size: 22px;
+    margin-left: 10px;
+}
+
+.slide_icon i{
+    font-size: 22px;
+    cursor: pointer;
+    color: var(--grey-dark-color);
+}
+.slide_icon #prev{
+    margin-right: 20px;
 }
