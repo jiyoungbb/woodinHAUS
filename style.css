@@ -57,6 +57,20 @@ body {
   border-radius: 10px;
 }
 
+/* Entire text */
+.category{
+    font-size: var(--font-medium);
+    font-weight: bold;
+}
+.headline{
+    font-size: var(--font-head);
+    font-weight: 100;
+}
+.explain{
+    font-size: var(--font-large);
+    font-weight: 100;
+}
+
 /* ########### Header ########### */
 header{
     position: fixed;
@@ -203,19 +217,14 @@ header{
     background-color: var(--background-color);
 }
 .best_product p{
-    font-size: var(--font-medium);
-    font-weight: bold;
+    
 }
 .best_product h3{
-    font-size: var(--font-head);
-    font-weight: 100;
     margin: 30px 0;
 }
-.best_product_text{
+#content2 .explain{
     display: block;
     margin: 0 auto;
-    font-size: var(--font-large);
-    font-weight: 100;
     width: 230px;
 }
 .line{
@@ -281,13 +290,15 @@ header{
 
 /* ########### CONTENT 03 ########### */
 #content3{
-    padding: 40px 0;
+    padding: 60px 0;
+    background-color: var(--background-color);
 }
 #content3 ul{
     /* display: flex; */
     overflow: hidden;
     padding-left: 0;
     width: 100%; 
+    position: relative;
 }
 #content3 ul li{
     float: left;
@@ -328,9 +339,24 @@ header{
     width: 100%; height: 100%;
     text-align: center;
     padding-top: 95px;
-    background-color: rgba(0, 0, 0, 0.289);
+    background-color: rgba(0, 0, 0, 0.3);
 }
 .category_caption p{
     font-size: var(--font-large);
     color: var(--background-color);
 }
+
+/* text 조정 */
+.categoryy{
+    position: absolute; 
+    top: 60px; left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+}
+
+.categoryy .category{}
+.categoryy .headline{
+    width: 500px;
+    margin: 20px auto;
+}
+.categoryy .explain{}
