@@ -426,9 +426,7 @@ header{
     width: 100%;
     padding-left: 0;
     overflow-x:scroll;
-    white-space:nowrap;
-
-    
+    white-space:nowrap; 
 }
 .gallery_slider:hover,
 .gallery_slider li a:hover{
@@ -464,4 +462,52 @@ header{
 #back_pattern02{
     top: 10px; right: 50px;
     width: 200px; height: 200px;
+}
+
+/* ########### CONTENT 06 ########### */
+#content6{
+    background-image: url(./images/brand_back.jpeg);
+}
+
+.brand{
+    text-align: center;
+    margin-top: 120px;
+}
+.brand .category{
+    color: var(--white-color);
+}
+.brand .headline{
+    margin-top: 10px;
+    color: var(--white-color);
+}
+
+.brand_content{
+    display: flex;
+    padding-left: 0;
+    margin-top: 100px;
+}
+.brand_content li{
+    width: 300px; height: 300px;
+    padding: 55px 30px;
+    text-align: center;
+    margin: 0 auto;
+}
+.brand_content li i{
+    font-size: var(--font-head);
+}
+.brand_content li h4{
+    font-size: var(--font-head-res);
+    font-weight: 100;
+    margin: 20px 0;
+}
+.brand_content li p{
+    font-size: var(--font-large);
+    font-weight: 100;
+    margin: 0;
+}
+
+.brand_content li i,
+.brand_content li h4,
+.brand_content li p{
+    color: var(--white-color);
 }

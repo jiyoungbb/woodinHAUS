@@ -110,4 +110,46 @@
     .category_caption p{
         font-size: var(--font-medium);
     }
+
+    /* ########### CONTENT 04 ########### */
+
+    /* ########### CONTENT 05 ########### */
+    #back_pattern01,
+    #back_pattern02{
+        display: none;
+    }
+
+    #content5{
+        padding: 0;
+    }
+
+    .gallery_slider{
+        height: 600px;
+    }
+    .gallery_slider li{
+        width: 500px; height: 500px;
+    }
+    .gallery_slider a img{
+        width: 500px; height: 500px;
+    }
+
+    /* ########### CONTENT 06 ########### */
+    #content6{}
+
+    .brand{
+        margin-top: 150px;
+    }
+    .brand_content{
+        margin: 100px auto;
+    }
+    .brand_content li{
+        width: 200px; height: 200px;
+        padding: 55px 20px;
+    }
+    .brand_content li h4{
+        font-size: var(--font-large);
+    }
+    .brand_content li p{
+        display: none;
+    }
 }
