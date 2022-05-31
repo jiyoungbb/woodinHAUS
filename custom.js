@@ -1,4 +1,14 @@
 $(document).ready(function(){
+
+    // Change CSS with Scroll
+  $(window).scroll(function(){
+    if($(window).scrollTop() > 50) {
+      $('.gototop').addClass('active')
+    }
+    else {
+      $('.gototop').removeClass('active')
+    }   
+  })
     // slide
     var slide_container;
     var slide_count;
@@ -32,34 +42,62 @@ $(document).ready(function(){
     }
 
     // content5 가로 스트롤
-  const slider = document.querySelector('.gallery_slider');
+  const g_slider = document.querySelector('.gallery_slider');
   let isDown = false;
   let startX;
   let scrollLeft;
 
-  slider.addEventListener('mousedown', e => {
+  g_slider.addEventListener('mousedown', e => {
     isDown = true;
-    slider.classList.add('active');
-    startX = e.pageX - slider.offsetLeft;
-    scrollLeft = slider.scrollLeft;
+    g_slider.classList.add('active');
+    startX = e.pageX - g_slider.offsetLeft;
+    scrollLeft = g_slider.scrollLeft;
   });
 
-  slider.addEventListener('mouseleave', () => {
+  g_slider.addEventListener('mouseleave', () => {
     isDown = false;
-    slider.classList.remove('active');
+    g_slider.classList.remove('active');
   });
 
-  slider.addEventListener('mouseup', () => {
+  g_slider.addEventListener('mouseup', () => {
     isDown = false;
-    slider.classList.remove('active');
+    g_slider.classList.remove('active');
   });
 
-  slider.addEventListener('mousemove', e => {
+  g_slider.addEventListener('mousemove', e => {
     if (!isDown) return; 
     e.preventDefault();
-    const x = e.pageX - slider.offsetLeft;
+    const x = e.pageX - g_slider.offsetLeft;
     const walk = x - startX;
-    slider.scrollLeft = scrollLeft - walk;
+    g_slider.scrollLeft = scrollLeft - walk;
   });
+
+   // content7 가로 스트롤
+   const i_slider = document.querySelector('.instagram_slider');
+ 
+   i_slider.addEventListener('mousedown', e => {
+     isDown = true;
+     i_slider.classList.add('active');
+     startX = e.pageX - i_slider.offsetLeft;
+     scrollLeft = i_slider.scrollLeft;
+   });
+ 
+   i_slider.addEventListener('mouseleave', () => {
+     isDown = false;
+     i_slider.classList.remove('active');
+   });
+ 
+   i_slider.addEventListener('mouseup', () => {
+     isDown = false;
+     i_slider.classList.remove('active');
+   });
+ 
+   i_slider.addEventListener('mousemove', e => {
+     if (!isDown) return; 
+     e.preventDefault();
+     const x = e.pageX - i_slider.offsetLeft;
+     const walk = x - startX;
+     i_slider.scrollLeft = scrollLeft - walk;
+   });
 })
 

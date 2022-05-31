@@ -134,8 +134,6 @@
     }
 
     /* ########### CONTENT 06 ########### */
-    #content6{}
-
     .brand{
         margin-top: 150px;
     }
@@ -151,5 +149,14 @@
     }
     .brand_content li p{
         display: none;
+    }
+
+    /* ########### CONTENT 07 ########### */
+    #back_pattern03{
+        display: none;
+    }
+
+    .instagram .headline::after{
+        top: -15px; right: 180px;
     }
 }
