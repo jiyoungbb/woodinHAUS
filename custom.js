@@ -9,6 +9,7 @@ $(document).ready(function(){
       $('.gototop').removeClass('active')
     }   
   })
+
     // slide
     var slide_container;
     var slide_count;
