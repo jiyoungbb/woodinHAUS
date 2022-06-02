@@ -316,6 +316,10 @@ header{
 }
 .slide_icon #prev{
     margin-right: 20px;
+    color: var(--grey-light-color);
+}
+.slide_icon #next{
+    color: var(--grey-light-color);
 }
 
 /* ########### CONTENT 03 ########### */
@@ -437,10 +441,39 @@ header{
     color: var(--grey-dark-color);
     cursor: pointer;
 }
+
 /* showroom slider */
 .showroom_slider{
     width: 65%; height: 100%;
+    overflow: hidden;
     background-color: #fff;
+
+    position: relative;
+}
+.showroom_slider_ctn{
+    display: flex;
+    padding: 0; margin: 0;
+    height: 100%;
+    
+    position: absolute;
+    top: 0; left: 0;
+}
+.showroom_slider_ctn li{
+    width: 885px; height: 100%;
+}
+.showroom_slider_ctn li img{
+    width: 100%; height: 100%;
+}
+
+#s_slide_icon{
+    position: absolute;
+    bottom: 20px; left: 20px;
+}
+#s_prev{
+    margin-right: 20px;
+}
+#s_prev, #s_next{
+    color: var(--grey-light-color);
 }
 
 /* ########### CONTENT 05 ########### */

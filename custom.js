@@ -10,8 +10,9 @@ $(document).ready(function(){
     }   
   })
 
+
  
-  /* controller scroll */
+  /* content2 controller scroll */
   let slides = document.querySelector('.best_slide_ctn');
   let slideImg = document.querySelectorAll('.best_slide_ctn li');
   currentIdx = 0;
@@ -19,19 +20,6 @@ $(document).ready(function(){
   prev = document.querySelector('#prev');
   next = document.querySelector('#next');
   slideWidth = 700;
-  // slideMargin = 0;
-  // makeClone();
-  // initfunction();
-
-  function makeClone(){
-    let cloneSlide_first = slideImg[0].cloneNode(true);
-    let cloneSlide_last = slides.lastElementChild.cloneNode(true);
-    slides.append(cloneSlide_first);
-    slides.insertBefore(cloneSlide_last, slides.firstElementChild);
-  }
-  function initfunction(){
-    slides.style.width = (slideWidth) * (slideCount + 2) + 'px';
-  }
 
   next.addEventListener('click', function () {
     //다음 버튼 눌렀을때
@@ -45,7 +33,6 @@ $(document).ready(function(){
 
   prev.addEventListener('click', function () {
     //이전 버튼 눌렀을때
-    console.log(currentIdx);
     if (currentIdx >= 0) {
       slides.style.left = 0 + 'px';
       slides.style.transition = `${0.5}s ease-out`;
@@ -53,6 +40,34 @@ $(document).ready(function(){
     currentIdx -= 1;
   });
 
+    /* content4 controller scroll */
+    let s_slides = document.querySelector('.showroom_slider_ctn');
+    let s_slideImg = document.querySelectorAll('.showroom_slider_ctn li');
+    s_currentIdx = 0;
+    s_slideCount = s_slideImg.length;
+    s_prev = document.querySelector('#s_prev');
+    s_next = document.querySelector('#s_next');
+    s_slideWidth = 885;
+
+  
+    s_next.addEventListener('click', function () {
+      //다음 버튼 눌렀을때
+      if (s_currentIdx <= s_slideCount - 1) {
+        //슬라이드이동
+        s_slides.style.left = -(s_currentIdx)*(s_slideWidth) + 'px';
+        s_slides.style.transition = `${0.5}s ease-out`; //이동 속도
+      }
+      s_currentIdx += 1;
+    });
+  
+    s_prev.addEventListener('click', function () {
+      //이전 버튼 눌렀을때
+      if (s_currentIdx >= 0) {
+        s_slides.style.left = +(s_currentIdx) * (s_slideWidth) + 'px';
+        s_slides.style.transition = `${0.5}s ease-out`;
+      }
+      s_currentIdx -= 1;
+    });
 
 
 
