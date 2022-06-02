@@ -10,39 +10,53 @@ $(document).ready(function(){
     }   
   })
 
-    // slide
-    var slide_container;
-    var slide_count;
-    var slide_position = 1;
+ 
+  /* controller scroll */
+  let slides = document.querySelector('.best_slide_ctn');
+  let slideImg = document.querySelectorAll('.best_slide_ctn li');
+  currentIdx = 0;
+  slideCount = slideImg.length;
+  prev = document.querySelector('#prev');
+  next = document.querySelector('#next');
+  slideWidth = 700;
+  // slideMargin = 0;
+  // makeClone();
+  // initfunction();
 
-    slide_container = $('.best_slide_container');
-    slide_count = slide_container.children().length;
+  function makeClone(){
+    let cloneSlide_first = slideImg[0].cloneNode(true);
+    let cloneSlide_last = slides.lastElementChild.cloneNode(true);
+    slides.append(cloneSlide_first);
+    slides.insertBefore(cloneSlide_last, slides.firstElementChild);
+  }
+  function initfunction(){
+    slides.style.width = (slideWidth) * (slideCount + 2) + 'px';
+  }
 
-    $('#prev').click(function(){
-        prev();
-    })
-    $('#next').click(function(){
-        next();
-    })
-
-    function prev(){
-        if(1<slide_position){
-            slide_container.animate({
-                left:'+=700px'
-            });
-            slide_position--;
-        }
+  next.addEventListener('click', function () {
+    //다음 버튼 눌렀을때
+    if (currentIdx <= slideCount - 1) {
+      //슬라이드이동
+      slides.style.left = -(slideWidth) + 'px';
+      slides.style.transition = `${0.5}s ease-out`; //이동 속도
     }
-    function next(){
-        if(slide_count>slide_position){
-            slide_container.animate({
-                left:'-=700px'
-            });
-            slide_position++;
-        }
-    }
+    currentIdx += 1;
+  });
 
-    // content5 가로 스트롤
+  prev.addEventListener('click', function () {
+    //이전 버튼 눌렀을때
+    console.log(currentIdx);
+    if (currentIdx >= 0) {
+      slides.style.left = 0 + 'px';
+      slides.style.transition = `${0.5}s ease-out`;
+    }
+    currentIdx -= 1;
+  });
+
+
+
+
+  /* hold and drah scroll */
   const g_slider = document.querySelector('.gallery_slider');
   let isDown = false;
   let startX;
