@@ -552,7 +552,6 @@ header{
     text-align: center;
     margin-right: 20px;
 }
-.gallery_slider li a{}
 .gallery_slider a img{
     width: 350px; height: 350px;
     border-radius: 10px;
@@ -568,6 +567,10 @@ header{
     position: absolute;
     background-color: var(--grey-light-color);
     border-radius: 50%;
+}
+#back_pattern01,
+#back_pattern02{
+    z-index: -1;
 }
 #back_pattern01{
     top: 120px; right: 300px;
