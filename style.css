@@ -385,16 +385,15 @@ header{
     background-color: var(--background-color);
 }
 #content3 ul{
-    /* display: flex; */
-    overflow: hidden;
+    display: flex;
     padding-left: 0;
-    width: 100%; 
+    width: 90%; 
     position: relative;
+    margin: 0 auto;
 
     z-index: 1;
 }
 #content3 ul li{
-    float: left;
     width: 300px; height: 260px;
     border-radius: 5px;
     overflow: hidden;
@@ -402,18 +401,12 @@ header{
 }
 
 /* 자리조정 */
-#content3 ul li:first-child{
-    margin-right: 756px;
-}
-#content3 ul li:nth-child(3),
-#content3 ul li:nth-child(4),
-#content3 ul li:nth-child(5){
+#content3 ul li:nth-child(1),
+#content3 ul li:nth-child(2),
+#content3 ul li:nth-child(3){
     margin-right: 52px;
-    margin-top: 52px;
 }
-#content3 ul li:last-child{
-    margin-top: 52px;
-}
+/* end */
 
 #content3 ul li:hover .category_img{
     transform: scale(1.2);
@@ -441,12 +434,9 @@ header{
 
 /* text 조정 */
 .categoryy{
-    position: absolute; 
-    top: 60px; left: 50%;
-    transform: translateX(-50%);
     text-align: center;
-
-    z-index: 1;
+    z-index: 2;
+    margin-bottom: 80px;
 }
 .categoryy .headline{
     width: 500px;
@@ -461,6 +451,7 @@ header{
     width: 1200px; height: 900px;
     border-radius: 50%;
     background-color: var(--white-color);
+    z-index: -1;
 }
 
 /* ########### CONTENT 04 ########### */
