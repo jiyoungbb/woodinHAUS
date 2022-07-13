@@ -12,7 +12,7 @@ $(document).ready(function(){
 
 
  
-  /* content2 controller scroll */
+  /* content2 slide controller */
   let slides = document.querySelector('.best_slide_ctn');
   let slideImg = document.querySelectorAll('.best_slide_ctn li');
   currentIdx = 0;
