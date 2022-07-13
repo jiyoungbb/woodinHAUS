@@ -460,7 +460,7 @@ header{
     background-color: rgba(0, 0, 0, 0.7);
 }
 .showroom{
-    width: 35%; height: 100%;
+    width:43%; height: 100%;
     text-align: right;
     padding: 140px 60px;
 }
@@ -469,6 +469,8 @@ header{
 }
 .showroom .headline{
     color: var(--white-color);
+    display: inline-block;
+    width: 300px;
 }
 .showroom .line{
     display: inline-block;
@@ -492,7 +494,7 @@ header{
 
 /* showroom slider */
 .showroom_slider{
-    width: 65%; height: 100%;
+    width: 885px; height: 100%;
     overflow: hidden;
     background-color: #fff;
 
