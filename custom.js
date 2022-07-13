@@ -12,7 +12,7 @@ $(document).ready(function(){
 
 
  
-  /* content2 slide controller */
+  /* content2 controller scroll */
   let slides = document.querySelector('.best_slide_ctn');
   let slideImg = document.querySelectorAll('.best_slide_ctn li');
   currentIdx = 0;
@@ -40,7 +40,7 @@ $(document).ready(function(){
     currentIdx -= 1;
   });
 
-  /* content4 slide controller */
+  /* content4 controller scroll */
   let s_slides = document.querySelector('.showroom_slider_ctn');
   let s_slideImg = document.querySelectorAll('.showroom_slider_ctn li');
   s_currentIdx = 0;
@@ -99,7 +99,7 @@ $(document).ready(function(){
   });
 
 
-    /* content5 hold and drag scroll */
+    /* content5 hold and drah scroll */
     const g_slider = document.querySelector('.gallery_slider');
     let isDown = false;
     let startX;
@@ -131,7 +131,7 @@ $(document).ready(function(){
     });
 
    
-   /* content7 hold and drag scroll */
+   /* content7 hold and drah scroll */
    const i_slider = document.querySelector('.instagram_slider');
  
    i_slider.addEventListener('mousedown', e => {
