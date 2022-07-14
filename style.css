@@ -136,7 +136,6 @@ header{
     margin-right: 80px;
 }
 .gnb_sub li a{
-    font-family: 'Noto Sans KR', sans-serif;
     display: block;
     font-size: var(--font-large);
     color: var(--black-color);
