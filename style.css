@@ -357,6 +357,7 @@ header{
     font-size: 26px;
     font-weight: 100;
     color: var(--white-color);
+    font-family: 'Noto Sans KR', sans-serif;
 }
 .caption li:first-child::after{
     content: '|';
