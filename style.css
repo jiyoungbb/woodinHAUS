@@ -671,6 +671,8 @@ header{
 
     position: relative;
     z-index: 2;
+
+    -ms-overflow-style: none;
 }
 .instagram_slider::-webkit-scrollbar{
     display: none;
