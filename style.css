@@ -541,6 +541,17 @@ header{
     overflow-x:scroll;
     white-space:nowrap; 
 }
+/* 스크롤바 */
+.gallery_slider::-webkit-scrollbar{
+    height: 5px;
+}
+.gallery_slider::-webkit-scrollbar-thumb{
+    background-color: red;
+}
+.gallery_slider::-webkit-scrollbar-track{
+    background-color: pink;
+}
+
 .gallery_slider:hover,
 .gallery_slider li a:hover{
     cursor: url(./images/drag.png), auto;
