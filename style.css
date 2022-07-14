@@ -647,7 +647,6 @@ header{
 .instagram{
     text-align: center;
 }
-.instagram .category{}
 
 .instagram .headline{
     position: relative;
@@ -672,6 +671,9 @@ header{
 
     position: relative;
     z-index: 2;
+}
+.instagram_slider::-webkit-scrollbar{
+    display: none;
 }
 .instagram_slider:hover{
     cursor: url(./images/drag.png), auto;
