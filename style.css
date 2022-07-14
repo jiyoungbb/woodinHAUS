@@ -543,13 +543,13 @@ header{
 }
 /* 스크롤바 */
 .gallery_slider::-webkit-scrollbar{
-    height: 5px;
+    height: 1px;
 }
 .gallery_slider::-webkit-scrollbar-thumb{
-    background-color: red;
+    background-color: var(--grey-dark-color);
 }
 .gallery_slider::-webkit-scrollbar-track{
-    background-color: pink;
+    background-color: var(--black-color);
 }
 
 .gallery_slider:hover,
