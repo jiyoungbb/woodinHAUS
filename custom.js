@@ -43,8 +43,8 @@ $(document).ready(function(){
   /* content4 controller scroll */
   let s_slides = document.querySelector('.showroom_slider_ctn');
   let s_slideImg = document.querySelectorAll('.showroom_slider_ctn li');
-  s_currentIdx = 0;
-  s_slideCount = s_slideImg.length;
+  s_currentIdx = 0; //현재 인덱스
+  s_slideCount = s_slideImg.length; // 슬라이드 안 콘텐츠 갯수
   s_prev = document.querySelector('#s_prev'); //이전 버튼
   s_next = document.querySelector('#s_next'); //다음 버튼
   s_slideWidth = 885; //슬라이드이미지 넓이
