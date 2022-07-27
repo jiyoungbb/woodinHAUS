@@ -99,7 +99,7 @@ $(document).ready(function(){
   });
 
 
-    /* content5 hold and drah scroll */
+    /* content5 hold and drag scroll */
     const g_slider = document.querySelector('.gallery_slider');
     let isDown = false;
     let startX;
@@ -131,7 +131,7 @@ $(document).ready(function(){
     });
 
    
-   /* content7 hold and drah scroll */
+   /* content7 hold and drag scroll */
    const i_slider = document.querySelector('.instagram_slider');
  
    i_slider.addEventListener('mousedown', e => {
